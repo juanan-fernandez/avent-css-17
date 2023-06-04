@@ -26,11 +26,20 @@ a:hover {
 }
 
 body {
-	margin: 0;
+	margin: 0 auto;
 	display: flex;
-	place-items: center;
+	justify-content: center;
+	max-width: 1080px;
 	min-width: 320px;
 	min-height: 100vh;
+}
+
+blockquote {
+	color: #8b8b8b;
+	font-size: 1.3rem;
+	line-height: 2.5rem;
+	margin: 1.5rem auto;
+	width: 60%;
 }
 
 p {
@@ -54,43 +63,37 @@ h3 {
 	line-height: 2rem;
 }
 
-#app {
-	max-width: 1280px;
-	margin: 0 auto;
-	padding: 2rem;
-	text-align: center;
-}
-
-.logo {
-	height: 6em;
-	padding: 1.5em;
-	will-change: filter;
-	transition: filter 300ms;
-}
-.logo:hover {
-	filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.vanilla:hover {
-	filter: drop-shadow(0 0 2em #f7df1eaa);
-}
-
-.card {
-	padding: 2em;
-}
-
-.read-the-docs {
-	color: #888;
-}
-
 .content {
-	margin: 0 auto;
+	width: 100%;
 	padding: 2rem;
 	display: grid;
-	grid-template-columns: 400px 1fr;
+	grid-template-columns: 200px 70%;
 	gap: 2rem;
 }
+
 aside {
-	margin-top: 2rem;
+	margin-top: 5rem;
+}
+aside ul {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+aside li {
+	padding: 1.3rem;
+}
+
+aside a {
+	color: black;
+	text-decoration: none;
+	font-weight: 400;
+}
+
+aside a:active {
+	border-left: 1px solid #f40082;
+	color: #f40082;
+	font-weight: 700;
 }
 
 .table-of-contents {
@@ -101,4 +104,28 @@ aside {
 	line-height: 24px;
 	letter-spacing: 0.1em;
 	text-transform: uppercase;
+	padding-left: 1.3rem;
+}
+
+.image-text-wrapper {
+	display: flex;
+	gap: 2rem;
+	justify-content: space-between;
+}
+.image-text-wrapper__image {
+	align-self: flex-start;
+}
+.image-text-wrapper__content {
+	align-self: flex-start;
+}
+
+.image {
+	width: 100%;
+	font-size: 12px;
+	color: gray;
+	text-align: center;
+}
+
+.image img {
+	width: 100%;
 }
