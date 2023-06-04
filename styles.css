@@ -29,7 +29,7 @@ body {
 	margin: 0 auto;
 	display: flex;
 	justify-content: center;
-	max-width: 1080px;
+	max-width: 1250px;
 	min-width: 320px;
 	min-height: 100vh;
 }
@@ -64,16 +64,12 @@ h3 {
 }
 
 .content {
-	width: 100%;
+	width: 96%;
 	padding: 2rem;
 	display: grid;
-	grid-template-columns: 200px 70%;
+	grid-template-columns: 24% 73%;
 	gap: 2rem;
 }
-
-/* aside {
-	margin-top: 5rem;
-} */
 
 aside ul {
 	list-style: none;
